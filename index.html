@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Jimmy's Dinner</title>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Smythe&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />       
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Jimmy’s Diner</h1>
+                <p class="header-text">The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+        <section id="menu-items"></section>
+        <section id="order-details"></section>
+        <section id="payment-container" class="hidden">
+            <div class="payment-container">
+                <h2 class="payment-header">Enter card details</h2>
+                <form id="pay-form">
+                    <input id="name" name="name" placeholder="Enter your name" aria-label="name" required>
+                    <input id="card-number" name="card-number" placeholder="Enter card number" aria-label="card number" required>
+                    <input id="cvv" name="cvv" placeholder="Enter CVV" aria-label="cvv" required>
+                    <button id="pay-btn" class="pay-btn">Pay</button>
+                </form>
+            </div>
+        </section>
+        <section id="confirmation-text"></section>
+    </body>
+    <script src="index.js" type="module"></script>
+</html>
+
+

@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+    color: #000000;
+} 
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.4375rem;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-weight: 1.25rem;
+}
+
+.header-text {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.item-emoji {
+    font-family: 'Inter', sans-serif;
+    font-size: 4.94rem;
+    font-weight: 400;
+    margin: 0 0 0 -20px;
+    opacity: 72%;
+}
+
+.ingredients-text {
+    color: #8B8B8B;
+    margin: 8px 0 12px;
+}
+
+.plus-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.order-remove-text {
+    cursor: pointer;
+    font-family: 'Verdana';
+    color: #BBBBBB;
+    font-size: .75rem;
+    padding: 2px;
+}
+
+.confirmation-text {
+    font-size: 1.675rem;
+    margin: 0;
+    color: #295043;
+}
+
+/* Layout */
+
+header {
+    background-image: url("./images/header.png");
+    background-size: cover;
+    background-position-y: center;
+    padding: 46px 20px;
+    margin: 0 0 68px;
+} 
+
+section {
+    padding: 0 46px;
+}
+
+.header-container,
+.item-container,
+.order-details-container {
+    margin: 0 auto;
+}
+
+.header-container{
+    max-width: 600px;
+}
+
+.item-container {
+    padding-bottom: 48px;
+    display: flex;
+    max-width: 508px;
+    gap: .2rem;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.item-container h2,
+.item-container h3 {
+    margin: 0;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.plus-container {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    margin-left: auto;
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-details-container {
+    max-width: 508px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-header {
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 56px;
+    margin-top: 0;
+}
+
+.ordered-item-details {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.ordered-item-details h2,
+.ordered-item-details h3,
+.ordered-item-details p {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.price-value {
+    margin-left: auto;
+}
+
+.total-price-container {
+    border-top: 2px solid #393333;
+    padding-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.fa {
+    opacity: .5;
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+.order-btn {
+    font-family: 'Verdana';
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #16DB99;
+    padding: 18px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 4em;
+}
+
+.pay-btn {
+    font-family: Verdana;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 31px;
+    padding: 17px 0 14px;
+    background: #16DB99;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    margin: 2.75rem 0 1.875rem;
+}
+
+.payment-container {
+    background: #FFFFFF;
+    max-width: 524px;
+    height: 542px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 24px;
+    border-radius: 4px;
+    filter: drop-shadow(5px 5px 255px rgba(0, 0, 0, 0.5));
+}
+
+.payment-header {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2.5rem 0 3.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4375rem;
+}
+
+input {
+    font-family: Verdana;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 16px;
+    border: 1.3px solid #757575;
+    border-radius: 4px;
+}
+
+.confirmation-text-container {
+    margin: 0 auto 4rem;
+    text-align: center;
+    max-width: 504px;
+    padding: 51px 0;
+    background: #ECFDF5;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
