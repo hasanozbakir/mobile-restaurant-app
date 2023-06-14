@@ -5,6 +5,9 @@ const menuItems = document.getElementById("menu-items")
 const orderDetails = document.getElementById("order-details")
 const paymentContainer = document.getElementById("payment-container")
 const payForm = document.getElementById("pay-form")
+const nameInputEl = document.getElementById("name")
+const cardNumberInputEl = document.getElementById("card-number")
+const cvvInputEl = document.getElementById("cvv")
 const confirmationText = document.getElementById("confirmation-text")
 
 document.addEventListener("click", function(e) {
@@ -51,15 +54,23 @@ document.addEventListener("click", function(e) {
         paymentContainer.classList.remove("hidden")
     } else if (!isClosest && !paymentContainer.classList.contains("hidden")) {
         paymentContainer.classList.add("hidden");
+        nameInputEl.value = ""
+        cardNumberInputEl.value = ""
+        cvvInputEl.value = ""
+
       }
 })
 
 payForm.addEventListener("submit", function(e) {
     e.preventDefault()
-    const payFormData = new FormData( payForm )
+    let payFormData = new FormData( payForm )
     const name = payFormData.get("name").split(" ")[0]
     const firstName = name[0].toUpperCase() + name.slice(1)
     orderedItemsArray = []
+    nameInputEl.value = ""
+    cardNumberInputEl.value = ""
+    cvvInputEl.value = ""
+
     paymentContainer.classList.add("hidden")
     render()
     confirmationText.innerHTML = `
@@ -67,6 +78,7 @@ payForm.addEventListener("submit", function(e) {
             <p class="confirmation-text">Thanks, ${name}!Your order is on the way!</p>
         </div>`
 
+    
 })
 
 render() 
